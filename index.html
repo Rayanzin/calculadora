@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <div id="res"></div>
+        <table>
+            <tr>
+                <td onclick="limpar()">C</td>
+                <td onclick="apagar()">&lt</td>
+                <td onclick="digitarNumero('/')">/</td>
+                <td onclick="digitarNumero('*')">X</td>
+            </tr>
+            <tr>
+                <td onclick="digitarNumero('7')">7</td>
+                <td onclick="digitarNumero('8')">8</td>
+                <td onclick="digitarNumero('9')">9</td>
+                <td onclick="digitarNumero('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="digitarNumero('4')">4</td>
+                <td onclick="digitarNumero('5')">5</td>
+                <td onclick="digitarNumero('6')">6</td>
+                <td onclick="digitarNumero('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="digitarNumero('1')">1</td>
+                <td onclick="digitarNumero('2')">2</td>
+                <td onclick="digitarNumero('3')">3</td>
+                <td rowspan="2" onclick="total()">=</td>
+            </tr>
+            <tr>
+                <td colspan="2" onclick="digitarNumero(0)">0</td>
+                <td onclick="digitarNumero('0')">.</td>
+            </tr>
+        </table>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
