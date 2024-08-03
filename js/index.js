@@ -1,17 +1,25 @@
-let numeros = []
-function limpar(){
+let prev = 0
+let current = 0
+let soma = 0
+function limpar() {
     res.innerHTML = ''
-    numeros = []
+    current = ''
+    prev = ''
 }
-function digitarNumero(num){
-    numeros.push(num)
-    res.innerHTML +=  num
-    console.log(res)
+function digitarNumero(num) {
+    current += num
+    res.innerHTML = current
 }
-function apagar(){
-    numeros.pop()
-    res.innerHTML = numeros.join().replaceAll(',', '')
+function somar() {
+    prev = current
+    current = ''
+    res.innerHTML = ''
 }
-function total(){
-    res = eval(res)
+function apagar() {
+    res.innerHTML = current.length
 }
+function total() {
+    soma = Number(current) + Number(prev)
+    res.innerHTML = soma
+}
+limpar()
