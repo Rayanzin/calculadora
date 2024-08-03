@@ -9,25 +9,26 @@
 <body>
     <main>
         <h1>Calculadora</h1>
+        <div id="previous"></div>
         <div id="res"></div>
         <table>
             <tr>
                 <td onclick="limpar()">C</td>
                 <td onclick="apagar()">&lt</td>
-                <td onclick="digitarNumero('/')">/</td>
-                <td onclick="digitarNumero('*')">X</td>
+                <td onclick="operador('div')">/</td>
+                <td onclick="operador('mult')">X</td>
             </tr>
             <tr>
                 <td onclick="digitarNumero(7)">7</td>
                 <td onclick="digitarNumero(8)">8</td>
                 <td onclick="digitarNumero(9)">9</td>
-                <td onclick="digitarNumero('-')">-</td>
+                <td onclick="operador('sub')">-</td>
             </tr>
             <tr>
                 <td onclick="digitarNumero(4)">4</td>
                 <td onclick="digitarNumero(5)">5</td>
                 <td onclick="digitarNumero(6)">6</td>
-                <td onclick="somar()">+</td>
+                <td onclick="operador('soma')">+</td>
             </tr>
             <tr>
                 <td onclick="digitarNumero(1)">1</td>
