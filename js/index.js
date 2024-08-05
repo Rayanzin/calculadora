@@ -1,9 +1,5 @@
 let prev = 0
 let current = 0
-let soma = 10
-let sub = 0
-let mult = 0
-let div = 0
 let operacao = 0
 let who;
 function limpar() {
@@ -16,8 +12,9 @@ function digitarNumero(num) {
     if(num == '.' && current.indexOf('.') == -1){
         current += num
         res.innerHTML = current
-    }else if(){
-
+    }else if(num != '.') {
+        current += num
+        res.innerHTML = current
     }
 }
 
